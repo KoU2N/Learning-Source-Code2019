@@ -8,5 +8,5 @@
     用公式表示就是：
     softmax(x)=softmax(x+c) ,其中c是实数。
 ## 输出
-![](图片路径)
+![](https://github.com/KoU2N/Learning-Source-Code2019/blob/master/softmax/softmax.png)
 
