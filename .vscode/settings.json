@@ -1,0 +1,7 @@
+{
+    "python.pythonPath": "/anaconda3/envs/env2/bin/python",
+    "python.linting.pylintEnabled": true,
+    "code-runner.executorMap": {
+        "python": "PYTHONIOENCODING=utf-8 python"
+    }
+}
