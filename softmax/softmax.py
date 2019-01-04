@@ -6,6 +6,8 @@
 #
 # 2019年1月1日
 import numpy as np
+import matplotlib.pyplot as plt
+
 def softmax(x):
     """
     对输入x的每一行计算softmax。
@@ -64,6 +66,15 @@ def main():
     test2 = np.array([[1,2],[3,4]])
     print('原始矩阵:\n', test2)
 
+    softmax_inputs = np.arange(-10,10)
+    softmax_outputs=softmax(softmax_inputs)
+    print("Sigmoid Function Input :\n",softmax_inputs)
+    print("Sigmoid Function Output :\n",softmax_outputs)
+    # 画图像
+    plt.plot(softmax_inputs,softmax_outputs)
+    plt.xlabel("Softmax Inputs")
+    plt.ylabel("Softmax Outputs")
+    plt.show()
 
 
 
