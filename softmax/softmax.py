@@ -53,7 +53,20 @@ def softmax2(inputs):
 
     return np.exp(inputs) / float(sum(np.exp(inputs)))
 
-
+def line_graph(x, y, x_title, y_title):
+    """
+    Draw line graph with x and y values
+    :param x:
+    :param y:
+    :param x_title:
+    :param y_title:
+    :return:
+    """
+    plt.plot(x, y)
+    plt.xlabel(x_title)
+    plt.ylabel(y_title)
+    plt.show()
+ 
 
 
 def main():
@@ -65,16 +78,15 @@ def main():
 
     test2 = np.array([[1,2],[3,4]])
     print('原始矩阵:\n', test2)
+    print("经过softmax后:\n", softmax(test2))    
 
-    softmax_inputs = np.arange(-10,10)
-    softmax_outputs=softmax(softmax_inputs)
-    print("Sigmoid Function Input :\n",softmax_inputs)
-    print("Sigmoid Function Output :\n",softmax_outputs)
-    # 画图像
-    plt.plot(softmax_inputs,softmax_outputs)
-    plt.xlabel("Softmax Inputs")
-    plt.ylabel("Softmax Outputs")
-    plt.show()
+    graph_x = np.arange(-20, 21)
+    graph_y = softmax2(graph_x)
+
+    print("Softmax Function Input :\n",graph_x)
+    print("Softmax Function Output :\n",graph_y)
+    
+    line_graph(graph_x, graph_y, "Inputs", "Softmax Scores")
 
 
 

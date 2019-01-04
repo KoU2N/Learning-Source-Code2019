@@ -19,10 +19,7 @@ def sigmoid(inputs):
     :return:
 
     """
-
-    sigmoid_scores = [1 / float(1 + np.exp(- x)) for x in inputs]
-
-    return sigmoid_scores
+    return np.array([1 / float(1 + np.exp(- x)) for x in inputs])
 
 def line_graph(x, y, x_title, y_title):
     """
@@ -39,16 +36,18 @@ def line_graph(x, y, x_title, y_title):
     plt.show()
 
 def main():
-    sigmoid_inputs = [1, 2, 3, 4]
-    print("原始向量:", sigmoid_inputs)
-    print("经过Sigmoid后:",sigmoid(sigmoid_inputs))
+    sigmoid_inputs = np.array([1, 2, 3, 4])
+    print("原始向量:", np.array(sigmoid_inputs))
+    print("经过Sigmoid后:\n",sigmoid(sigmoid_inputs))
 
 
-    graph_x = range(0, 21)
+    graph_x = np.arange(-20, 21)
     graph_y = sigmoid(graph_x)
 
-    print("Graph X readings: {}".format(graph_x))
-    print("Graph Y readings: {}".format(graph_y))
+
+    
+    print("Sigmod Function Input :\n",graph_x)
+    print("Sigmod Function Output :\n",graph_y)
 
     line_graph(graph_x, graph_y, "Inputs", "Sigmoid Scores")
 
