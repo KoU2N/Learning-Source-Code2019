@@ -31,21 +31,41 @@ def softmax(x):
     else:
         # 向量
         tmp = np.max(x)  # 得到最大值
-        x -= tmp  # 利用最大值缩放数据
+        x -= tmp  # 利用最大值缩放数据,缩放可以省略
         x = np.exp(x)  # 对所有元素求指数
         tmp = np.sum(x)  # 求元素和
         x /= tmp  # 求somftmax
     return x
+
+def softmax2(inputs):
+    
+    """
+    向量更简单的写法，不能处理矩阵
+    Calculate the softmax for the give inputs (array)
+
+    :param inputs:
+
+    :return:
+
+    """
+
+    return np.exp(inputs) / float(sum(np.exp(inputs)))
+
+
+
 
 def main():
     test1 = np.array([1,  2, 3, 4])
   
     print("原始向量:", test1)
     print("经过softmax后:", softmax(test1))
+    print("经过softmax2后:",softmax2(test1))
 
     test2 = np.array([[1,2],[3,4]])
     print('原始矩阵:\n', test2)
 
+
+
+
 if __name__ == '__main__':
     main()
-    print(__name__)
