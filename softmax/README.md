@@ -8,5 +8,5 @@
     用公式表示就是：
     softmax(x)=softmax(x+c) ,其中c是实数。
 ## 结果
-    ![](https://github.com/KoU2N/Learning-Source-Code2019/blob/master/softmax/cmd_result.png)
-    ![](https://github.com/KoU2N/Learning-Source-Code2019/blob/master/softmax/softmax.png)
+![](https://github.com/KoU2N/Learning-Source-Code2019/blob/master/softmax/cmd_result.png)
+![](https://github.com/KoU2N/Learning-Source-Code2019/blob/master/softmax/softmax.png)

@@ -16,5 +16,5 @@
     2、softmax是二分类任务的推广，用于解决多分类问题，输出值是一组小数，有几类就有几个小数，相加为1。
 
 ## 结果
-    ![](https://github.com/KoU2N/Learning-Source-Code2019/blob/master/sigmod/cmd_result.png)
-    ![](https://github.com/KoU2N/Learning-Source-Code2019/blob/master/sigmod/sigmod.png)
+![](https://github.com/KoU2N/Learning-Source-Code2019/blob/master/sigmod/cmd_result.png)
+![](https://github.com/KoU2N/Learning-Source-Code2019/blob/master/sigmod/sigmod.png)
