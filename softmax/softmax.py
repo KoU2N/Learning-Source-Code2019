@@ -8,6 +8,7 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
+
 def softmax(x):
     """
     对输入x的每一行计算softmax。
@@ -39,8 +40,8 @@ def softmax(x):
         x /= tmp  # 求somftmax
     return x
 
+
 def softmax2(inputs):
-    
     """
     向量更简单的写法，不能处理矩阵
     Calculate the softmax for the give inputs (array)
@@ -52,6 +53,7 @@ def softmax2(inputs):
     """
 
     return np.exp(inputs) / float(sum(np.exp(inputs)))
+
 
 def line_graph(x, y, x_title, y_title):
     """
@@ -66,28 +68,25 @@ def line_graph(x, y, x_title, y_title):
     plt.xlabel(x_title)
     plt.ylabel(y_title)
     plt.show()
- 
 
 
 def main():
     test1 = np.array([1,  2, 3, 4])
-  
     print("原始向量:", test1)
     print("经过softmax后:", softmax(test1))
-    print("经过softmax2后:",softmax2(test1))
+    print("经过softmax2后:", softmax2(test1))
 
-    test2 = np.array([[1,2],[3,4]])
+    test2 = np.array([[1, 2], [3, 4]])
     print('原始矩阵:\n', test2)
-    print("经过softmax后:\n", softmax(test2))    
+    print("经过softmax后:\n", softmax(test2))
 
     graph_x = np.arange(-20, 21)
     graph_y = softmax2(graph_x)
 
-    print("Softmax Function Input :\n",graph_x)
-    print("Softmax Function Output :\n",graph_y)
-    
-    line_graph(graph_x, graph_y, "Inputs", "Softmax Scores")
+    print("Softmax Function Input :\n", graph_x)
+    print("Softmax Function Output :\n", graph_y)
 
+    line_graph(graph_x, graph_y, "Inputs", "Softmax Scores")
 
 
 if __name__ == '__main__':

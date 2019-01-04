@@ -1,9 +1,13 @@
 {
     "python.pythonPath": "/anaconda3/envs/env2/bin/python",
-    "python.linting.pylintPath": "/anaconda3/envs/env2/bin/pylint",
-    "python.linting.pylintEnabled": true,
+
     "code-runner.executorMap": {
         "python": "PYTHONIOENCODING=utf-8 python"
     },
-    "code-runner.fileDirectoryAsCwd": true 
+    "code-runner.fileDirectoryAsCwd": true,
+    "python.formatting.provider": "yapf",
+    "python.linting.pylintEnabled": false,
+    "python.linting.flake8Enabled": true,
+
+
 }
