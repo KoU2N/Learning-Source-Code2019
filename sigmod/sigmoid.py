@@ -10,15 +10,10 @@ import matplotlib.pyplot as plt
 
 
 def sigmoid(inputs):
-
     """
-
     Calculate the sigmoid for the give inputs (array)
-
     :param inputs:
-
     :return:
-
     """
     return np.array([1 / float(1 + np.exp(- x)) for x in inputs])
 

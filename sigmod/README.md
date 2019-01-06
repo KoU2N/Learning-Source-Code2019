@@ -17,4 +17,4 @@
 
 ## 结果
 ![](https://github.com/KoU2N/Learning-Source-Code2019/blob/master/sigmod/cmd_result.png)
-![](https://github.com/KoU2N/Learning-Source-Code2019/blob/master/sigmod/sigmod.png)
+![](https://github.com/KoU2N/Learning-Source-Code2019/blob/master/sigmod/sigmoid.png)
